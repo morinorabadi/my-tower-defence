@@ -1,3 +1,4 @@
+import '@babylonjs/loaders'
 import {
   AbstractAssetTask,
   AssetsManager,
