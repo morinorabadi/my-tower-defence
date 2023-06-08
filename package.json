@@ -1,0 +1,24 @@
+{
+  "name": "tower-defence",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^6.3.1",
+    "@babylonjs/gui": "^6.3.1",
+    "@babylonjs/havok": "^1.0.1",
+    "@babylonjs/loaders": "^6.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "@babylonjs/gui-editor": "^6.3.1",
+    "@babylonjs/inspector": "^6.3.1",
+    "@babylonjs/materials": "^6.3.1",
+    "@babylonjs/serializers": "^6.3.1"
+  }
+}
