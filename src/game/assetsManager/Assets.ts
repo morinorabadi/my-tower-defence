@@ -1,4 +1,4 @@
-import '@babylonjs/loaders'
+import "@babylonjs/loaders";
 import {
   AbstractAssetTask,
   AssetsManager,
@@ -36,6 +36,7 @@ export class Assets extends AssetsManager {
   }
 
   private handleFinish(tasks: AbstractAssetTask[]) {
+    this.assets = { models: {} } as IAssets;
     tasks.forEach((task) => {
       // * MODELS
       if (task instanceof MeshAssetTask) {
@@ -49,7 +50,7 @@ export class Assets extends AssetsManager {
         // * save loaded models
         this.assets.models[name as IModelsNames] = task;
 
-        //loadedMeshes[0].setEnabled(false);
+        loadedMeshes[0].setEnabled(false);
       }
     });
   }

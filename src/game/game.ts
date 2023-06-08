@@ -44,6 +44,10 @@ export default class Game {
       Game.instance.scene.render();
     });
 
+    window.addEventListener("resize", () => {
+      Game.instance.engine.resize()
+    })
+
     Game.isLoadOver = true;
 
     // * and loading page should be disappear
